@@ -1,0 +1,200 @@
+{
+  "bebidasCalientes": [
+    {
+      "nombre": "Latte Sabor 8oz",
+      "descripcion": "Escoge tu Latte favorito de 8 oz con saborizante de tu preferencia.",
+      "precio": 3.99,
+      "imagen": "../img/bebidasHOT/latte8onz.jpg"
+    },
+    {
+      "nombre": "Cappuccino",
+      "descripcion": "Bebida a base de 2 shots de espresso y leche texturizada.",
+      "precio": 3.99,
+      "imagen": "../img/bebidasHOT/cappuccino.jpg"
+    },
+    {
+      "nombre": "Americano",
+      "descripcion": "Café americano de 8 oz.",
+      "precio": 2.7,
+      "imagen": "../img/bebidasHOT/americano.jpg"
+    },
+    {
+      "nombre": "Americano 12 Oz",
+      "descripcion": "Café americano de 12 oz.",
+      "precio": 3.6,
+      "imagen": "../img/bebidasHOT/americano12onz.jpg"
+    },
+    {
+      "nombre": "Latte 8 Oz",
+      "descripcion": "Latte caliente de 8 oz a base de 1 shot de espresso y leche texturizada.",
+      "precio": 3.6,
+      "imagen": "../img/bebidasHOT/latte8onz.jpg"
+    },
+    {
+      "nombre": "Blue Chai Latte 12 Oz",
+      "descripcion": "Bebida de 12 oz a base de té blue chai sin saborizantes con leche texturizada.",
+      "precio": 4.8,
+      "imagen": "../img/bebidasHOT/bluechai.jpg"
+    },
+    {
+      "nombre": "Latte Sabor 12Oz",
+      "descripcion": "Escoge tu Latte Favorito de 12oz con saborizante de tu preferencia.",
+      "precio": 4.5,
+      "imagen": "../img/bebidasHOT/latte12onz.jpg"
+    },
+    {
+      "nombre": "Xilotepec 12 Oz",
+      "descripcion": "La bebida de la casa es a base de dos shot de espresso, horchata, sirope de la casa a base de canela...",
+      "precio": 4.5,
+      "imagen": "../img/bebidasHOT/xilocoffe.jpg"
+    },
+    {
+      "nombre": "Pink Chai Latte",
+      "descripcion": "Bebida de 8 oz a base de té pink chai sin saborizantes con leche texturizada.",
+      "precio": 4.31,
+      "imagen": "../img/bebidasHOT/pinckchai.jpg"
+    },
+    {
+      "nombre": "Chai Latte",
+      "descripcion": "Latte de 8 oz con té chai y leche texturizada.",
+      "precio": 4.31,
+      "imagen": "../img/bebidasHOT/chailatte.jpg"
+    },
+    {
+      "nombre": "Chai Latte 12 Oz",
+      "descripcion": "Latte de 12 oz con té Chai y leche texturizada.",
+      "precio": 4.8,
+      "imagen": "../img/bebidasHOT/chailatte12.jpg"
+    },
+    {
+      "nombre": "Blue Chai Latte",
+      "descripcion": "Bebida de 8 oz a base de té Blue Chai sin saborizantes con leche texturizada.",
+      "precio": 4.31,
+      "imagen": "../img/bebidasHOT/bluechai8oz.jpg"
+    },
+    {
+      "nombre": "Pink Chai Latte 12 Oz",
+      "descripcion": "Bebida de 8 oz a base de té pink chai sin saborizantes con leche texturizada.",
+      "precio": 4.8,
+      "imagen": "../img/bebidasHOT/pinckchai12onz.jpg"
+    },
+    {
+      "nombre": "Latte 12 Oz",
+      "descripcion": "Latte caliente de 12 oz a base de 2 shots de espresso y leche texturizada.",
+      "precio": 4.1,
+      "imagen": "../img/bebidasHOT/latte12onzdiseño.jpg"
+    }
+  ],
+  "bebidasFrias": [
+    {
+      "nombre": "Xilotepec",
+      "descripcion": "Bebida de 16 oz a base de 2 oz de cold brew, horchata, leche de tu elección y sirope de la casa a base de anís estrellado...",
+      "precio": 5.7,
+      "imagen": "../img/bebidasCOLD/xilotepec.jpg"
+    },
+    {
+      "nombre": "Iced Americano",
+      "descripcion": "Bebida de 16 oz a base de 2 shots de espresso y agua con hielo.",
+      "precio": 4.2,
+      "imagen": "../img/bebidasCOLD/iceamericano.jpg"
+    },
+    {
+      "nombre": "Iced Dirty Chai",
+      "descripcion": "Latte de 16 oz a base de 2 shots de espresso, té chai y leche de tu elección.",
+      "precio": 5.7,
+      "imagen": "../img/bebidasCOLD/icedirtychai.jpg"
+    },
+    {
+      "nombre": "Iced Chai",
+      "descripcion": "Latte de 16 oz a base té chai y leche de tu elección.",
+      "precio": 5.1,
+      "imagen": "../img/bebidasCOLD/icechai.jpg"
+    },
+    {
+      "nombre": "Strawberry Green Matcha",
+      "descripcion": "Latte de 16 oz a base de 2 oz de fresa, leche de tu elección y green matcha.",
+      "precio": 5.7,
+      "imagen": "../img/bebidasCOLD/strawberrygreenmatcha.jpg"
+    },
+    {
+      "nombre": "Iced Green Matcha",
+      "descripcion": "Latte de 16 oz a base de green matcha y leche de tu elección.",
+      "precio": 5.4,
+      "imagen": "../img/bebidasCOLD/icedgreenmatcha.jpg"
+    },
+    {
+      "nombre": "Iced Blue Chai",
+      "descripcion": "Latte de 16 oz a té blue chai y leche de tu elección.",
+      "precio": 5.7,
+      "imagen": "../img/bebidasCOLD/icedbluechai.jpg"
+    },
+    {
+      "nombre": "Iced Latte",
+      "descripcion": "Latte de 16 oz a base de 2 shots de espresso y leche de tu elección.",
+      "precio": 5.1,
+      "imagen": "../img/bebidasCOLD/icedlatte.jpg"
+    }
+  ],
+  "postres": [
+    {
+      "nombre": "Tiramisú",
+      "descripcion": "¡Disfruta del emblema de la casa!!! El tiramisú a base de nuestro café de especialidad y mascarpone.",
+      "precio": 5.75,
+      "imagen": "../img/postres/tiramisu.jpg"
+    },
+    {
+      "nombre": "Xilotepec Entremet",
+      "descripcion": "Nuestro postre icónico: mousse de atol de elote con centro líquido de leche burra, cubierto con glaseado de chocolate con leche...",
+      "precio": 7.0,
+      "imagen": "../img/postres/xilotepecentremet.jpg"
+    },
+    {
+      "nombre": "Brownie Con Almendra",
+      "descripcion": "Delicioso Brownie de chocolate con almendras. Decorado con chocolate y azúcar Glass.",
+      "precio": 3.85,
+      "imagen": "../img/postres/brownie.jpg"
+    },
+    {
+      "nombre": "Tarta De Limón",
+      "descripcion": "Tarta de limón hecha a base de galleta y un glaseado de limón.",
+      "precio": 4.0,
+      "imagen": "../img/postres/tartalimon.jpg"
+    },
+    {
+      "nombre": "Coffee Sacher",
+      "descripcion": "Mousse de crema diplomática con centro de bizcocho de café, cubierto de chocolate y virutas de oro comestible. Un postre elegante...",
+      "precio": 6.75,
+      "imagen": "../img/postres/coffesacher.jpg"
+    },
+    {
+      "nombre": "Banana Bread Sugar & Gluten Free",
+      "descripcion": "Disfruta de nuestro exquisito pan de banana y para que no rompas la dieta no contiene azúcar y es libre de gluten.",
+      "precio": 3.99,
+      "imagen": "../img/postres/banana.jpg"
+    },
+    {
+      "nombre": "Cheescake De Frutos Rojos",
+      "descripcion": "¡El clásico de siempre!!! Cheesecake de frutos rojos, disfruta de su cremosidad en cada mordisco.",
+      "precio": 5.0,
+      "imagen": "../img/postres/cheescake.jpg"
+    },
+    {
+      "nombre": "Cereza Del Bosque",
+      "descripcion": "Entremet refrescante de mousse de limón con corazón de compota de cereza y frutos rojos, cubierto con suave chocolate blanco y glaseado...",
+      "precio": 7.25,
+      "imagen": "../img/postres/cereza.jpg"
+    },
+    {
+      "nombre": "Lemon Bread",
+      "descripcion": "Disfruta de nuestro delicioso pan de limón.",
+      "precio": 2.75,
+      "imagen": "../img/postres/lemon.jpg"
+    },
+    {
+      "nombre": "Tres Leches",
+      "descripcion": "Nada mejor que disfrutar una buena taza de café con nuestro delicioso tres leches.",
+      "precio": 3.75,
+      "imagen": "../img/postres/tresleches.jpg"
+    }
+  ]
+}
