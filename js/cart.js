@@ -4,6 +4,7 @@ let cerrarCarrito = document.getElementById("cerrarCarrito");
 
 // para el menu carrito
 document.addEventListener("DOMContentLoaded", () => {
+  //Movimiento del sidebar
   carritoBtn.addEventListener("click", () => {
     carritoSidebar.classList.toggle("active");
   });
@@ -15,6 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
   // funciones del carrito (actualiza, agrega y mas)
   const carritoItems = document.getElementById("carritoItems");
   let carrito = {};
+
+  const carritoGuardado = localStorage.getItem("carrito");
+  if (carritoGuardado) {
+    carrito = JSON.parse(carritoGuardado);
+    actualizarCarrito();
+  }
 
   function actualizarCarrito() {
     carritoItems.innerHTML = "";
@@ -50,6 +57,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.getElementById("cartTotal").textContent = total.toFixed(2);
+
+    localStorage.setItem("carrito", JSON.stringify(carrito));
   }
 
   window.modificarCantidad = function (nombre, cambio) {
@@ -197,6 +206,18 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       } else {
         actualizarCarrito();
+        console.log(carrito);
+
+        Swal.fire({
+          icon: "success",
+          title: "Compra finalizada",
+          text: "Tu carrito se ha guardado como factura",
+          timer: 2000,
+          timerProgressBar: true,
+          willClose: () => {
+            window.location.href = "/pages/total.html";
+          },
+        });
       }
     });
 });

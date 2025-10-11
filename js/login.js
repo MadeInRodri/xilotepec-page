@@ -26,6 +26,8 @@ loginForm.addEventListener("submit", (e) => {
     text: `Hola ${validUser.username}!`,
     timer: 2000,
     timerProgressBar: true,
+    willClose: () => {
+      window.location.href = "cart.html";
+    },
   });
-  window.location.href = "cart.html"; // aqui le cambias donde se redirige
 });

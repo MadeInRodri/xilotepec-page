@@ -37,6 +37,8 @@ registroForm.addEventListener("submit", (e) => {
     text: `Bienvenido ${username}!`,
     timer: 2000,
     timerProgressBar: true,
+    willClose: () => {
+      window.location.href = "login.html";
+    },
   });
-  window.location.href = "login.html";
 });

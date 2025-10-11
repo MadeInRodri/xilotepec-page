@@ -10,6 +10,14 @@ nav {
   background-color: #9dac99;
 }
 
+.color-xilo {
+  background-color: #9dac99;
+}
+
+.btn:hover {
+  border: 1px solid #9dac99;
+}
+
 .banner {
   height: 90vh;
   background: url("../img/granosCafe.jpg");
