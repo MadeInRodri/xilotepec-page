@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Obtener el contenedor donde irá la tabla
   const btnPDF = document.querySelector("#btnPDF");
+  const formComentarios = document.querySelector("#formComentarios");
   const tablaContainer = document.querySelector("#tabla");
   if (!tablaContainer)
     return console.error("No se encontró el elemento #tabla");
@@ -85,5 +86,46 @@ document.addEventListener("DOMContentLoaded", () => {
       pagebreak: { mode: ["css", "legacy"] }, // <--- clave para dividir
     };
     html2pdf().set(opt).from(element).save();
+
+    Swal.fire({
+      title: "¡Se ha descargado el recibo!",
+      html: `Nos encantaría que nos dejes un comentario`,
+      icon: "success",
+      confirmButtonText: "Aceptar",
+      timer: 2000,
+      timerProgressBar: true,
+    });
+
+    btnPDF.disabled = true;
+  });
+
+  formComentarios.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let textArea = document.getElementById("floatingTextarea");
+    let btnComentarios = document.getElementById("btnComentarios");
+
+    if (textArea.value == "") {
+      Swal.fire({
+        title: "Comentario vacío",
+        html: "No puedes dejar el comentario vacío",
+        icon: "error",
+        confirmButtonText: "Aceptar",
+        timer: 2000,
+        timerProgressBar: true,
+      });
+      return;
+    }
+
+    Swal.fire({
+      title: "¡Se ha enviado el comentario!",
+      html: `Muchas gracias, lo apreciamos mucho`,
+      icon: "success",
+      confirmButtonText: "Aceptar",
+      timer: 2000,
+      timerProgressBar: true,
+    });
+
+    textArea.disabled = true;
+    btnComentarios.disabled = true;
   });
 });

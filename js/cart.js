@@ -1,6 +1,7 @@
 let carritoBtn = document.getElementById("carritoBtn");
 let carritoSidebar = document.getElementById("carritoSidebar");
 let cerrarCarrito = document.getElementById("cerrarCarrito");
+const limpiarBtn = document.getElementById("limpiarBtn");
 
 // para el menu carrito
 document.addEventListener("DOMContentLoaded", () => {
@@ -11,6 +12,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
   cerrarCarrito.addEventListener("click", () => {
     carritoSidebar.classList.remove("active");
+  });
+
+  limpiarBtn.addEventListener("click", () => {
+    if (Object.keys(carrito).length === 0) {
+      Swal.fire({
+        icon: "info",
+        title: "Carrito vacío",
+        text: "No hay productos para limpiar.",
+        timer: 1500,
+        timerProgressBar: true,
+      });
+    } else {
+      Swal.fire({
+        title: "¿Estás seguro?",
+        text: "Se eliminarán todos los productos del carrito.",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonText: "Sí, limpiar",
+        cancelButtonText: "Cancelar",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          carrito = {}; // vaciar el carrito
+          localStorage.removeItem("carrito"); // eliminar del almacenamiento
+          actualizarCarrito(); // refrescar la vista
+          Swal.fire({
+            icon: "success",
+            title: "Carrito limpiado",
+            text: "Tu carrito ahora está vacío.",
+            timer: 1500,
+            timerProgressBar: true,
+          });
+        }
+      });
+    }
   });
 
   // funciones del carrito (actualiza, agrega y mas)

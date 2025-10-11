@@ -41,12 +41,12 @@
                 <a
                   class="nav-link active text-light"
                   aria-current="page"
-                  href="#conocenos"
+                  href="../index.html"
                   >Nuestra Historia</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="#promociones"
+                <a class="nav-link text-light" href="../index.html"
                   >Promociones</a
                 >
               </li>
@@ -71,7 +71,29 @@
         <article class="mb-3">
           <button class="btn color-xilo" id="btnPDF">Descargar Recibo</button>
         </article>
-        <h2>Nosotros te traemos el café, ¡de la finca a tu casa!</h2>
+        <form action="" id="formComentarios" class="w-100 container">
+          <h3>¡Queremos saber tu opinion!</h3>
+          <label for="floatingTextarea"
+            >Gracias a ti en Xilotepec podemos mejorar continuamente para
+            ofrecerte un producto que mejora día tras día, así que cúentanos que
+            te parecío nuestro servicio, una recomendación que tenga o un
+            comentario, eso nos ayudaría mucho.
+          </label>
+          <div class="form-floating">
+            <textarea
+              class="form-control"
+              placeholder="Dejanos un comentario"
+              id="floatingTextarea"
+              style="min-height: 10rem"
+            ></textarea>
+            <label for="floatingTextarea">Comenta</label>
+          </div>
+          <article class="mt-3">
+            <button type="submit" class="btn color-xilo" id="btnComentarios">
+              Enviar comentarios
+            </button>
+          </article>
+        </form>
       </section>
     </main>
     <footer class="text-light pt-5">
@@ -129,5 +151,6 @@
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"
   ></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.25.0/dist/sweetalert2.all.min.js"></script>
   <script src="../js/total.js"></script>
 </html>
