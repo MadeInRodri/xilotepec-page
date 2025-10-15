@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Obtener el contenedor donde irá la tabla
   const btnPDF = document.querySelector("#btnPDF");
   const formComentarios = document.querySelector("#formComentarios");
+  const formDireccion = document.querySelector("#formDireccion");
   const tablaContainer = document.querySelector("#tabla");
   if (!tablaContainer)
     return console.error("No se encontró el elemento #tabla");
@@ -127,5 +128,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
     textArea.disabled = true;
     btnComentarios.disabled = true;
+  });
+
+  formDireccion.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let textArea = document.getElementById("floatingTextarea2");
+    let btnDireccion = document.getElementById("btnDireccion");
+
+    if (textArea.value == "") {
+      Swal.fire({
+        title: "Dirección vacía",
+        html: "No puedes dejar la dirección vacía",
+        icon: "error",
+        confirmButtonText: "Aceptar",
+        timer: 2000,
+        timerProgressBar: true,
+      });
+      return;
+    }
+
+    Swal.fire({
+      title: "¡Se ha enviado la dirección!",
+      html: `Tu pedido llegará dentro de poco`,
+      icon: "success",
+      confirmButtonText: "Aceptar",
+      timer: 2000,
+      timerProgressBar: true,
+    });
+
+    textArea.disabled = true;
+    btnDireccion.disabled = true;
   });
 });
